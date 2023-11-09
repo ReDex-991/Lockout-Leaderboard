@@ -62,7 +62,6 @@
 @media only screen and (max-width: 1300px) {
 
     .times{
-
         width: 60% !important;
     }
 
@@ -79,6 +78,10 @@
 
 }
 @media only screen and (max-width: 900px) {
+
+    .player>h1{
+        display: block !important;
+    }
 
     .bracket-legend{
         display: none !important;
