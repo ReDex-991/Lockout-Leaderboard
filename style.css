@@ -48,6 +48,17 @@
     padding: 4px;
 
 }
+.timer{
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.timer-section{
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    border: 2px solid white;
+    transition: .5s all ease;
+
+}
+
 
 @media only screen and (max-width: 1336px) {
     .player>h1{
@@ -107,6 +118,31 @@
 
     .semifinal-info{
         flex-direction: column !important;
+    }
+    .leaderboard{
+        font-size: 2.4em;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+
+    .timer{
+        
+        width: 100% !important;
+    }
+    .timer-section{
+        height: 100px !important;
+        width: 70px !important;
+        transition: .5s ease;
+    }
+    .timer-text{
+        font-size: .75em !important;
+        transition: .5s all ease;
+
+    }
+    .timer-number{
+        font-size: 2em !important;
+
     }
 }
 
