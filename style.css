@@ -120,7 +120,7 @@
         flex-direction: column !important;
     }
     .leaderboard{
-        font-size: 2.1em;
+        font-size: 2.1em !important;
     }
 }
 
