@@ -24,25 +24,11 @@
             <h2 class="text-white mt-3 text-lg">Vedi gli orari <a href="#orari" class="underline underline-offset-2 decoration-4 transition-all hover:decoration-1">Qui</a></h2>
           <!-- TIMER -->
             <div id="timer" class="timer mt-8 bg-slate-600 p-6 rounded-3xl w-auto h-60 text-center flex justify-center items-center flex-col text-gray-800">
-              <h1 class="text-white text-2xl mb-5">TIMER INIZIO SECONDO MATCH!</h1>
-              <div class="timer-sections flex justify-between items-center text-center gap-5">
-                
-                <div class="bg-slate-400 w-28 h-36 rounded-2xl flex flex-col justify-center items-center timer-section">
-                  <p id="Day" class="flex justify-center items-center text-3xl timer-number">99</p>
-                  <p class="text-xl timer-text">Giorni</p>
-                </div>
-                <div class="bg-slate-400 w-28 h-36 rounded-2xl flex flex-col justify-center items-center timer-section">
-                  <p id="Hour" class="flex justify-center items-center text-3xl timer-number">99</p>
-                  <p class="text-xl timer-text">Ore</p>
-                </div>
-                <div class="bg-slate-400 w-28 h-36 rounded-2xl flex flex-col justify-center items-center timer-section">
-                  <p id="Min" class="flex justify-center items-center text-3xl timer-number">99</p>
-                  <p class="text-xl timer-text">Minuti</p>
-                </div>
-                <div class="bg-slate-400 w-28 h-36 rounded-2xl flex flex-col justify-center items-center timer-section">
-                  <p id="Sec" class="flex justify-center items-center text-3xl timer-number">99</p>
-                  <p class="text-xl timer-text">Secondi</p>
-                </div>
+              <h1 class="text-white text-2xl mb-5">VINCITORE QUINTA EDIZIONE DEL TORNEO DI LOCKOUT</h1>
+              <div class="flex justify-center items-center">
+                <img src="https://minotar.net/helm/Ennesimo_" alt="vincitore" class="rounded-xl shadow-winner" width="150px">
+                <h2 class="text-white text-5xl ml-10">ENNESIMO</h2>
+              </div>
             </div> 
               
         </div>
@@ -196,7 +182,7 @@
               <h1 class="bg-gray-800 p-4 rounded-2xl w-56 legend-mobile flex justify-center">FINALE</h1>
             </div>
             <div class="couple">
-              <div  class="flex items-center m-4 py-10 px-5 leading-relaxed bg-gray-800 text-gray-300 rounded-xl h-10 relative player">
+              <div  class="flex items-center m-4 py-10 px-5 leading-relaxed bg-green-500 text-gray-300 rounded-xl h-10 relative player">
                 <span class="w-12 h-12 ml-1 mr-1 bg-black rounded-xl flex justify-center items-center">
                   <a href="#"><img src="https://minotar.net/helm/Ennesimo_" alt="" class="rounded-lg" title="Ennesimo_"></a>
                 </span>
@@ -205,7 +191,7 @@
               <span class="text-2xl flex justify-center items-center versus">
                 <h1>VS</h1>
               </span>
-              <div  class="flex items-center m-4 py-10 px-5 leading-relaxed bg-gray-800 text-gray-300 rounded-xl h-10 relative player">
+              <div  class="flex items-center m-4 py-10 px-5 leading-relaxed bg-red-600 text-gray-300 rounded-xl h-10 relative player">
                 <span class="w-12 h-12 ml-1 mr-1 bg-black rounded-xl flex justify-center items-center">
                   <a href="#"><img src="https://minotar.net/helm/drip_baa" alt="" class="rounded-lg" title="drip120"></a>
                 </span>
@@ -219,12 +205,11 @@
             <div class="text-white flex justify-center items-center mt-4 legend-mobile">
               <h1 class="bg-gray-800 p-4 rounded-2xl w-56 legend-mobile flex justify-center">VINCITORE</h1>
             </div>
-            <div  class="flex items-center m-4 py-10 px-5 leading-relaxed bg-gray-800 text-gray-300 rounded-xl h-10 relative player winner">
+            <div  class="flex items-center m-4 py-10 px-5 leading-relaxed bg-green-500 text-gray-300 rounded-xl h-10 relative player winner">
               <span class="w-12 h-12 ml-1 mr-1 bg-black rounded-xl flex justify-center items-center">
-                <a href="#"><img src="https://minotar.net/helm/" alt="" class="rounded-lg hidden" title="???"></a>
-                <h1 class="font-semibold text-3xl">?</h1>
+                <a href="#"><img src="https://minotar.net/helm/Ennesimo_" alt="" class="rounded-lg" title="Ennesimo_"></a>
               </span>
-              <h1>???</h1>
+              <h1>Ennesimo_</h1>
             </div>
             
           </div>
@@ -276,42 +261,5 @@
     </main>
     <!-- FOOTER -->
   
-  <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Nov 14, 2023 21:00:00").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-        
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-        
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-      // Output the result in an element with id="demo"
-      document.getElementById('Day').innerHTML = days
-      document.getElementById('Hour').innerHTML = hours
-      document.getElementById('Min').innerHTML = minutes
-      document.getElementById('Sec').innerHTML = seconds
-        
-      // If the count down is over, write some text 
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("timer").innerHTML = "<a href='https://www.youtube.com/@Ennesimo' class='hover:underline underline-offset-4 decoration-2 '>INIZIATO!!</a>";
-        document.getElementById("timer").classList.add("text-white");
-        document.getElementById("timer").classList.add("text-3xl");
-        document.getElementById("timer").classList.add("w-[556px]");
-        
-
-      }
-    }, 1000);
-  </script>
 </body>
 </html>
